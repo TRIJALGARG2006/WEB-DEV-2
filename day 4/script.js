@@ -18,3 +18,24 @@ let fruits1 = ["banana","apple"]
 let fruits2 = ["cherry","orange"]
 let combined = fruits1.concat(fruits2)
 console.log(combined)
+
+
+//spread operator
+
+let arr1 = [1,2,3]
+let arr2 = [4,5,6]
+let combined2 = [...arr1,...arr2]
+console.log(combined2)
+
+
+//tenary operator
+//condition ? value if true : value if false
+let age =20 ;
+let canvote = age>=18 ? "yes can vote" : "no cannot vote";
+console.log(canvote);
+
+
+//find out the number is even or odd using tenary operator
+let number = 67;
+let evenodd = number % 2 == 0 ? "even" : "odd";
+console.log(evenodd);
