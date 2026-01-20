@@ -32,3 +32,4 @@
 20. what is promise chaining and disadvantages of promise chaining 
 21. what is react and explain its features 
 22. what is vitrual DOM ?
+23. controlled and uncontrollable components 

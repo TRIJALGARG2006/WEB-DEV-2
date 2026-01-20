@@ -23,3 +23,17 @@ gets complex and hard to manage
 6. we cannot re-render normal varaiable in jsx 
 
 7. inside onclick or any event just write the function name, 
+
+## useEffect 
+
+>it is used to manage all the life cycle methods alone . 
+
+>ui render ho gaya --> ab kuch extra kaam karo 
+
+>use effect will take two parameters useEffect(useCallback,dependency-array)
+
+```jsx
+useEffect(()=> {},[])
+```
+
+>if the dependency array is empty then it will mount only once when the page reload for the first time 

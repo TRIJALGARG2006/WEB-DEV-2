@@ -1,0 +1,34 @@
+import React, { useState } from 'react'
+
+const MultiCounter = () => {
+
+    const [count, setCount] = useState([0, 0])
+    console.log(count); 
+
+
+    const increment = (index) => {
+        setCount((prev) => {
+            const newCount = [...prev];
+            console.log(newCount, "line 12") 
+            newCount[index] += 1;
+            return newCount
+        })
+    }
+
+    console.log(count);
+    return (
+        <>
+            <div>MultiCounter</div>
+            <>
+                {count.map((counter, index) => (
+                    <div key={index}>
+                        <h1>Count:{counter}</h1>
+                        <button onClick={() => increment(index)}>Increment</button>
+                    </div>
+                ))}
+            </>
+        </>
+    )
+}
+
+export default MultiCounter
