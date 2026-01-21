@@ -39,3 +39,70 @@ console.log(canvote);
 let number = 67;
 let evenodd = number % 2 == 0 ? "even" : "odd";
 console.log(evenodd);
+
+//check if a year an leap year or not using tenary operator
+let year = 2000;
+let leapyear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0) ? "leap year" : "not a leap year";
+console.log(leapyear);
+
+
+//first class function
+//in this function we can pass function to a variable and we are treating the variable as a function
+//we can pass a function inside an another function as an argument
+//it can return a function from a function  
+
+
+const demo = function(){
+    return "hello from demo function";
+}
+
+console.log(demo());
+
+function sample(callback){
+    console.log("sample");
+    console.log(callback());
+}
+
+
+function sample(){
+    return function(){
+        console.log("hello from anonymous function");
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//anonymous function
+
+
+
+
+
+
+// settimeout(function(){
+//     console.log("hello after 2 seconds");
+// },2000);
+
+setInterval(function(){
+    console.log("hello every 3 seconds");
+},3000);
+
+
+//self invoking function 
+
+(function(){
+    console.log("hello from self invoking function");
+})(); 
+//advantage of IIFE 
+//1. avoid data privacy 
+//2. dont give acess to call anywhere 
