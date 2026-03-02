@@ -22,4 +22,7 @@
     
 11. what is dom ? 
 12. difference between getelementbyid and getelementbyclassname 
-13. 
+13. difference between innertext , textcontent and innerhtml / explanaiton and code 
+14. dom traversal methods 
+15. addeventlistener 
+16. what is execution context and call stack 
