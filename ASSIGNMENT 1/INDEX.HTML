@@ -22,7 +22,7 @@
             <form id="eventForm">
                 <div class="formgroup">
                     <label>Event Title</label>
-                    <input type="text" required>
+                    <input type="text" id="title" required>
                 </div>
 
                 <div class="formgroup">
@@ -32,18 +32,17 @@
 
                 <div class="formgroup">
                     <label>Category</label>
-                    <select>
-                        <option>hackathon</option>
-                        <option>extra class type </option>
-                        <option>presentation</option>
-                        <option>birthday</option>
-                        <option>other</option>  
+                    <select id="category">
+                        <option>Conference</option>
+                        <option>Workshop</option>
+                        <option>Class</option>
+ 
                     </select>
                 </div>
 
                 <div class="formgroup">
                     <label>Description</label>
-                    <textarea rows="4" required></textarea>
+                    <textarea id="description" rows="4" required></textarea>
                 </div>
 
                 <button type="submit" class="btn-add">Add Event</button>
@@ -54,13 +53,13 @@
             <h2>My Events</h2>
 
             <div class="events-controls">
-                <button class="btn-control">Clear Events</button>
-                <button class="btn-control">Add Sample Events</button>
+                <button id="clearBtn" class="btn-control">Clear All Events</button>
+                <button id="sampleBtn" class="btn-control">Add Sample Events</button>
             </div>
 
-            <div class="eventscontainer">
-                <p style="text-align:center;color:#777;">
-                    Add your first event
+            <div id="eventsContainer" class="eventscontainer">
+                <p id="emptyMsg" style="text-align:center;color:#777;">
+                    No events yet. Add your first event!
                 </p>
             </div>
         </div>
@@ -69,8 +68,8 @@
 
     <div class="demo-section">
         <h2>DOM Manipulation Demo</h2>
-        <div class="key-display">
-            Press any key :- 
+        <div id="keyDisplay" class="key-display">
+            Press any key to see the difference!
         </div>
     </div>
 

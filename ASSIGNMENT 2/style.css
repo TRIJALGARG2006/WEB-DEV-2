@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #272a42; /* Dark blue background */
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.search-box button {
+    background-color: #e5533d; /* Orange/Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-box button:hover {
+    background-color: #d4452f;
+}
+
+/* History */
+.history-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.history-pill {
+    background-color: #e5533d;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+}
+
+/* Weather Info */
+.weather-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-content.hidden {
+    opacity: 0;
+}
+
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.weather-row:last-child {
+    border-bottom: none;
+}
+
+.weather-row .label {
+    font-weight: bold;
+    color: #e5533d; /* Red labels to match video */
+}
+
+/* Console */
+.console-wrapper {
+    grid-column: 1 / -1; /* Spans full width */
+}
+
+.console-card {
+    background: white;
+}
+
+.console-output {
+    background-color: #1e1e38; /* Dark console background */
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    min-height: 120px;
+}
+
+.log-line {
+    margin-bottom: 5px;
+}
+.log-line.blue { color: #64b5f6; }
+.log-line.purple { color: #ba68c8; }
+.log-line.green { color: #81c784; }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Weather Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🌤️ Async Weather Tracker</h1>
+    </header>
+
+    <main class="container">
+        <div class="left-col">
+            <div class="card">
+                <h2>Search City</h2>
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Delhi, London">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+
+            <div class="card history-card">
+                <h2>Search History</h2>
+                <div id="historyContainer" class="history-container">
+                    </div>
+            </div>
+        </div>
+
+        <div class="right-col">
+            <div class="card weather-card">
+                <h2>Weather Info</h2>
+                <div id="weatherContent" class="weather-content hidden">
+                    <div class="weather-row"><span class="label">City</span> <span id="w-city">--</span></div>
+                    <div class="weather-row"><span class="label">Temp</span> <span id="w-temp">--</span></div>
+                    <div class="weather-row"><span class="label">Weather</span> <span id="w-desc">--</span></div>
+                    <div class="weather-row"><span class="label">Humidity</span> <span id="w-humidity">--</span></div>
+                    <div class="weather-row"><span class="label">Wind</span> <span id="w-wind">--</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="console-wrapper">
+            <div class="card console-card">
+                <h2>Console – Event Loop</h2>
+                <div id="consoleOutput" class="console-output">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

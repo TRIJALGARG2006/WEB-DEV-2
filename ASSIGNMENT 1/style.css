@@ -8,71 +8,62 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(1deg, #836cdf, #004d7d);
     min-height: 100vh;
-    padding: 20px;
+    padding: 10px;
 }
 
-.header {
+.dashboard {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
-.header h1 {
+.dashboard h1 {
     color: #fff;
-    font-size: 2.4rem;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .form-section {
     background: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .form-section h2 {
-    color: black
+    color: black;
+    margin-bottom: 20px;
 }
 
+.formgroup {
+    margin-bottom: 20px;
+}
 
-.form-group label {
+.formgroup label {
     display: block;
     margin-bottom: 6px;
-    font-weight: 600;
     color: #333;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
+.formgroup input,
+.formgroup select,
+.formgroup textarea {
     width: 100%;
     padding: 10px;
-    border-radius: 2px;
-    border: 2px solid #ddd;
-}
-
-.form-group textarea {
-    resize: vertical;
+    border-radius: 10px;
+    border: 1px solid #ddd;
 }
 
 .btn-add {
     width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: 10px;
     background: #112e9e;
     color: white;
-    font-size: 1rem;
     cursor: pointer;
-}
-
-.events-section h2 {
-    text-align: center;
-    color: black;
 }
 
 .events-section {
@@ -82,18 +73,23 @@ body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
+.events-section h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
 
 .events-controls {
     display: flex;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .btn-control {
     flex: 1;
     padding: 10px;
     border: none;
-    border-radius: 7px;
+    border-radius: 10px;
     background: #0b538bf5;
     color: white;
     cursor: pointer;
@@ -101,52 +97,31 @@ body {
 
 .event-card {
     background: #e8f4f8;
-    border-radius: 12px;
-    padding: 18px;
+    border-radius: 10px;
+    padding: 20px;
     margin-bottom: 14px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    animation: fadeIn 0.3s ease;
+    position: relative;
 }
 
-.event-title {
-    font-size: 1.2rem;
+.del-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    cursor: pointer;
     font-weight: bold;
-    margin-bottom: 6px;
-}
-
-.event-date {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 8px;
-}
-
-.event-category {
-    display: inline-block;
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    color: white;
-    margin-bottom: 8px;
-}
-
-
-.event-description {
-    font-size: 0.95rem;
-    color: #444;
 }
 
 .demo-section {
     background: white;
-    border-radius: 14px;
-    padding: 22px;
-
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .key-display {
     margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #dddddd3d;
-    border-radius: 20px;
-    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
 }
-

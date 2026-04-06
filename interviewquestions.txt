@@ -26,3 +26,9 @@
 14. dom traversal methods 
 15. addeventlistener 
 16. what is execution context and call stack 
+17. what is event loop and how it executes asynchrous codes 
+18. what is callback hell, disadvantages of callback hell 
+19. explain the life cycle of promise and how it manages asymchourss function better than callback hell 
+20. what is promise chaining and disadvantages of promise chaining 
+21. what is react and explain its features 
+22. what is vitrual DOM ?
